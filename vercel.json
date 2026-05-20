@@ -1,7 +1,8 @@
 {
   "version": 2,
   "framework": null,
-  "buildCommand": "npm run build",
+  "installCommand": "npm --prefix frontend install",
+  "buildCommand": "NITRO_PRESET=vercel npm --prefix frontend run build",
   "outputDirectory": "frontend/dist",
   "env": {
     "NITRO_PRESET": "vercel"
