@@ -8,6 +8,7 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 import path from "path";
 
 export default defineConfig({
+  cloudflare: false,
   vite: {
     optimizeDeps: {
       exclude: ["mongoose"],

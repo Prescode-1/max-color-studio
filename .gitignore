@@ -44,3 +44,5 @@ test-db.js
 # Misc
 *.log
 .cache/
+
+.vercel

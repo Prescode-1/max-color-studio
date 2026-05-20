@@ -1,0 +1,11 @@
+{
+  "name": "max-color-studio-root",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "build": "SERVER_PRESET=vercel npm --prefix frontend run build && mv frontend/.vercel/output .vercel/output"
+  }
+}
