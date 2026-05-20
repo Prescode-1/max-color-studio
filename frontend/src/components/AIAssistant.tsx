@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { MessageCircle, X, Send, Sparkles } from "lucide-react";
-import { chat } from "@backend/server/chat";
+import { chat } from "@backend/rpc/chat";
 
 type Msg = { role: "user" | "assistant"; content: string };
 

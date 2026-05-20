@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { fetchAllAdminData, saveEntity, saveSettings } from "@backend/server/api";
+import { fetchAllAdminData, saveEntity, saveSettings } from "@backend/rpc/api";
 
 export type BookingStatus = "pending" | "confirmed" | "in-progress" | "complete" | "cancelled";
 
