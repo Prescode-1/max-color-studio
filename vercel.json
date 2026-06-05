@@ -1,10 +1,10 @@
 {
   "version": 2,
   "framework": null,
-  "installCommand": "npm --prefix frontend install",
-  "buildCommand": "NITRO_PRESET=vercel npm --prefix frontend run build",
-  "outputDirectory": "frontend/dist",
-  "env": {
-    "NITRO_PRESET": "vercel"
-  }
+  "installCommand": "npm --prefix backend install && npm --prefix frontend install",
+  "buildCommand": "npm --prefix frontend run build",
+  "outputDirectory": "frontend/dist/client",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/server" }
+  ]
 }

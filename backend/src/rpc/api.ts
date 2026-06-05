@@ -69,6 +69,7 @@ export const saveEntity = createServerFn({ method: "POST" })
         await Model.findByIdAndDelete(id);
         return { success: true };
       }
+      return { error: "Invalid action" };
     } catch (e: any) {
       return { error: e.message };
     }

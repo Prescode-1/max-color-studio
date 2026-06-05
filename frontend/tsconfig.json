@@ -22,7 +22,8 @@
     "noUncheckedSideEffectImports": true,
     "paths": {
       "@/*": ["./src/*"],
-      "@backend/*": ["../backend/src/*"]
+      "@backend/*": ["../backend/src/*"],
+      "@tanstack/react-start": ["./node_modules/@tanstack/react-start"]
     }
   }
 }

@@ -1,7 +1,8 @@
 {
   "name": "max-color-studio-root",
   "private": true,
+  "type": "module",
   "scripts": {
-    "build": "npm --prefix frontend install; NITRO_PRESET=vercel npm --prefix frontend run build"
+    "build": "npm --prefix backend install && npm --prefix frontend install && NITRO_PRESET=vercel npm --prefix frontend run build"
   }
 }

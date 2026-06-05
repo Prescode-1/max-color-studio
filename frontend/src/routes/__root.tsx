@@ -7,7 +7,6 @@ import { Footer } from "@/components/Footer";
 import { SearchPalette } from "@/components/SearchPalette";
 import { MouseGlow } from "@/components/MouseGlow";
 import { BrushCursor } from "@/components/BrushCursor";
-import { FoamTransition } from "@/components/FoamTransition";
 import { WheelLoader } from "@/components/WheelLoader";
 import { AIAssistant } from "@/components/AIAssistant";
 import { SocialFab } from "@/components/SocialFab";
@@ -81,7 +80,6 @@ function RootComponent() {
       <div className="relative min-h-screen bg-background text-foreground">
         <MouseGlow />
         <BrushCursor />
-        <FoamTransition />
         <Header onOpenSearch={() => setSearchOpen(true)} />
         <SearchPalette open={searchOpen} onOpenChange={setSearchOpen} />
         <main className="relative z-10 pt-20">
